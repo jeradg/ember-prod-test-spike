@@ -1,12 +1,11 @@
 'use strict';
 
-const path = require('path');
-
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     'ember-cli-terser': { enabled: false },
+    'ember-test-selectors': { patchClassicComponent: false },
   });
 
   // Use `app.import` to add additional libraries to the generated
